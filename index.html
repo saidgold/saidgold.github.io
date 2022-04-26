@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,76 +7,27 @@
     <title>Document</title>
 </head>
 <style>
-    .container {
-        display: flex;
-        height: 100vh;
+    body {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         background-color: aquamarine;
+         padding: 0px;
+         color: palevioletred;
     }
+    h1 {
+        margin: 0;
+        font-size: 2em;
+        transition: all ease-in 0.20s;
 
-    .aside {
-        flex-basis: 20%;
-        background-color: rgb(51, 194, 194);
     }
-
-    .header {
-        flex-basis: 20%;
-        background-color: rgb(175, 31, 31);
+    h1:hover {
+        font-size: 5em ;
     }
-
-    .section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .column-left {
-        display: flex;
-
-        background-color: blue;
-        width: 100%;
-        height: 100%;
-    }
-
-    .column-right {
-        display: flex;
-
-        background-color: green;
-        width: 100%;
-        height: 100%;
-    }
-    .content {
-        display: flex;
-        width: 100%;
-        height: 100%;
-    }
+  
 </style>
-
 <body>
-    <div class="container">
-        <div class="aside">
-            <h1>Меню</h1>
-        </div>
-        <div class="section">
-
-            <div class="header">
-                <h1>Заголовок</h1>
-            </div>
-            <div class="content">
-                <div class="column-left">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores cupiditate vitae
-                        recusandae optio sed labore officia nam, voluptatibus nostrum? Nostrum, dicta! Unde ducimus
-                        veritatis laborum ad, repellendus odit mollitia!</h1>
-
-                </div>
-                <div class="column-right">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi eius voluptatum tempore
-                        quod dolorem perspiciatis a sint quae? Nesciunt voluptatum aliquam esse! Distinctio beatae minus
-                        quibusdam, harum sit eveniet.</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    <h1>HOVERME</h1>
 </body>
-
 </html>
