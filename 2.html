@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,66 +7,27 @@
     <title>Document</title>
 </head>
 <style>
-    .container {
-        background-color: rgb(241, 192, 119);
-        display: flex;
-        width: 300px;
-        height: 400px;
-        flex-direction: column;
-
-    }
-
-    .item-1 {
-        height: 100%;
-        background-color: rgb(161, 62, 44);
-        margin: .4em;
-        display: flex;
-
-    }
-
-    .item-2 {
-        display: flex;
-        justify-content: space-around;
-        flex-basis: 20%;
-    }
-
-    .info {
-        margin: 0.4em;
-        background-color: rgb(96, 96, 197);
-        width: 100%;
-    }
-
     body {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+         background-color: aquamarine;
+         padding: 0px;
+         color: palevioletred;
     }
+    h1 {
+        margin: 0;
+        font-size: 2em;
+        transition: all ease-in 0.20s;
+
+    }
+    h1:hover {
+        font-size: 5em ;
+    }
+  
 </style>
-
 <body>
-    <div class="container">
-
-        <div class="item-1">
-            <h1>Описание сайта</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis quas ratione cupiditate enim
-                molestiae quibusdam. Similique architecto impedit, autem tempore voluptates beatae, ullam pariatur
-                consectetur, eaque delectus quidem animi!</p>
-        </div>
-        <div class="item-2">
-            <a class="info" href="index.html">
-                <span class="text">
-                    Войти!
-                </span>
-            </a>
-            <a class="info" href="3.html">
-            <span class="text">
-                Подумать!
-            </span>
-            </a>
-        </div>
-    </div>
-
+    <h1>HOVERME</h1>
 </body>
-
 </html>
