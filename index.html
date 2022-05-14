@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aida Conditori</title>
-    <link rel="stylesheet" href="phone.css">
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
+<style>
+    h1:hover {
+        font-size: 3em;
+    }
+    input:first-child {
+        color: aliceblue;
+        background-color: red;
+    }
+input:first-child:focus {
+    background-color: blue;
+}
+input:nth-child(2):focus {
+    background-color: chocolate;
+}
+a:active {
+ color: red;
+}
+a:visited {
+    color: red;
+}
+a:link {
+    color: green;
+}
+.block {
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+.block::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 5px;
+    background-color: white;
+    top:10%
+}
+.block::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 5px;
+    background-color: white;
+    bottom: 10%;
+}
+
+.popup {
+    display: inline-block;
+    padding: 1em;   
+    border-radius:20px ;
+    font-size: 2.25em;
+    color: aliceblue;
+    position: relative;
+    background-color: darkblue;
+}
+.popup:hover:after {
+    content: 'Всплывающее окно';
+    position: absolute;
+    padding: 1em;
+    top:50%;
+    left:25%;
+    border-radius: 20px;
+    white-space: nowrap;
+    background-color: green;
+    color: brown;
+
+}
+</style>
 <body>
-    <nav class="navbar">
-<div class="logo">
-<h1>Aida Conditori</h1>
-</div>
-<div class="menu">
-<a href="onas.html">О нас</a>
-<a href="sochseti.html">Соцсети</a>
-<a href="kontakti.html">Контакты</a>
-</div>
-    </nav>
-    <div class="img1">
-        <img src="https://sun9-30.userapi.com/s/v1/if2/dQCMAcDdPAdaAayQ67lTAGo8g_Xv4o8qAO5MeMGC2r6l62Sd6bea3gxX9RqS1yACicAmpnZCkoHmNjbxxrAxl0EW.jpg?size=1388x1852&quality=95&type=album" alt="">
-        <h1>Торт Наполеон<br>тонкие, хрустящие коржи и нежный крем на ваш выбор:<br> сливочный или заварной - от такого невозможно отказаться<br>Цена:1kg/1700руб<br><a href="https://www.youtube.com/shorts/2kZ63CWaPhI">Видео <b>YouTube</b> </a></h1>
+    <!-- <h1>Привет</h1> -->
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="submit" value="Поиск">
+    </form>
+    <a href="#">Простая ссылка</a>
+    <a href="active.html">Ссылка была посещена</a>
+    <a href="not_active1.html">Ссылка не была посещена</a>
+    <div class="block">
+Просто текст
     </div>
-
-<div class="saidgold">
-    <div class="img2">
-        <img src="https://sun9-36.userapi.com/s/v1/if2/3GlWUzSyfCGcrZxFKfzZxpbXwuva_Hv9Ma-NiWjOS0cqlcOWCLGNktz2ecH1vCf1A5qK1ADpou7PO1FS8mod5r26.jpg?size=1388x1852&quality=95&type=album" alt="">
-        <h1>Меренговый Рулет<br>невероятное сочетание французской меренги легкой<br> воздушной текстуры и сливочного крема <br>Чиз подарит незабываемые эмоции <br>никого не оставив равнодушным <br>Цена:3500руб<br><a href="https://www.youtube.com/shorts/aVf6zbyFGgQ">Видео <b>YouTube</b> </a></h1>
-    </div>
-</div>
-
-
-
-
-<div class="saidgold1">
-    <div class="img3">
-        <img src="https://sun9-57.userapi.com/s/v1/if2/_Mhai0qbr5rfHQCacRvsab2Mrm1GCDepanTnmTWfh5Gt6f9coqrKh7yuOtYtzHOMgMhxJdxRBb0EW0zhv0pGkkFe.jpg?size=1920x1547&quality=95&type=album" alt="">
-        <h1>Торт Цифра<br>медовые коржи в сочетании с нежным кремом Чиз 🍯<br>
-            данный торт можно выполнить в уникальном исполнении <br>на любую тематику<br>Цена:1цифра/4500руб <br><a href="https://www.youtube.com/shorts/Pk0r9NwAnd4">Видео <b>YouTube</b> </a></h1>
-    </div>
-</div>
-
-
-
-
-<div class="saidgold2">
-    <div class="img4">
-        <img src="https://sun9-80.userapi.com/s/v1/if2/4WHwaA6lvdVHkN_W02lHC0Be52RAxQjjjZcsI785NP7TRnw3XSyhFN41GqkWVaPv_RWtbCh78WyXloSROxIXFUc3.jpg?size=1578x1852&quality=95&type=album" alt="">
-        <h1>Медовый Торт<br>медовые коржи в сочетании с нежным кремом Чиз 🍯<br>
-            данный торт можно выполнить в уникальном исполнении<br> на любую тематику <br>на данном экземпляре торт в виде сердечка<br>Цена:сердечко/4500руб <br><a href="https://www.youtube.com/shorts/nFZp6JA53LE">Видео <b>YouTube</b> </a></h1>
-    </div>
-</div>
-
-
-
-
-
-<div class="saidgold3">
-    <div class="img5">
-        <img src="https://sun9-6.userapi.com/s/v1/if2/7ySjLGhW0_Ey-hzTUlqehSMbSEw2xA9GreiOVPGNEJ0NlMg86YnCtSNHGiFxtbttZlkD_r36IuHuI8YEh08aRtqn.jpg?size=1852x1852&quality=95&type=album" alt="">
-        <h1>Чизкейк Нью-Йорк<br>нежная текстура - это про него…<br>
-            сочетание мягкой сливочности и плотной хрустящей основы  <br>то, от чего невозможно отказаться <br>Цена:3500руб<br><a href="chizcake.html">Видео <b>YouTube</b> </a></h1>
-    </div>
-</div>
+    <div class="popup"</div>Наведи на меня курсор</div>
 </body>
+
 </html>
