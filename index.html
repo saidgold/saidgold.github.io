@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,91 +7,67 @@
     <title>Document</title>
 </head>
 <style>
-    h1:hover {
-        font-size: 3em;
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: #414a4c;
     }
-    input:first-child {
-        color: aliceblue;
-        background-color: red;
+    .loader {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 4px solid #414a4c;
+        overflow: hidden;
+        box-shadow: -10px -10px 15px rgb(59,59,59),
+                    10px 10px 10px rgba(0,0,0,0.1),
+                    inset -10px -10px 15px rgba(51,49,49,0.5) ,
+                    inset 10px 10px 10px rgba(0,0,0,0.1);
+        border-radius: 100%;
+        
+}
+.loader span {
+    position: absolute;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    z-index: -1;
+    animation:loader 0.5s linear infinite;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
     }
-input:first-child:focus {
-    background-color: blue;
+    100% {
+        transform: rotate(360deg);
+    }
 }
-input:nth-child(2):focus {
-    background-color: chocolate;
-}
-a:active {
- color: red;
-}
-a:visited {
-    color: red;
-}
-a:link {
-    color: green;
-}
-.block {
-    background-color: cadetblue;
-    width: 200px;
-    height: 200px;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    position: relative;
-}
-.block::before {
-    content: '';
+.loader::before {
+    content:'';
     position: absolute;
-    width: 90%;
-    height: 5px;
-    background-color: white;
-    top:10%
-}
-.block::after {
-    content: '';
-    position: absolute;
-    width: 90%;
-    height: 5px;
-    background-color: white;
-    bottom: 10%;
+    top: 25px;
+    bottom: 25px;
+    right: 25px;
+    left: 25px;
+    background-color: #414a4c;
+    border-radius: 100%;
+    border:4px solid #414a4c;
+    box-shadow: inset -10px -10px 15px rgba(51,49,49,0.5),
+                inset 10px 10px 10px rgba(0,0,0,0.1);
+    
 }
 
-.popup {
-    display: inline-block;
-    padding: 1em;   
-    border-radius:20px ;
-    font-size: 2.25em;
-    color: aliceblue;
-    position: relative;
-    background-color: darkblue;
-}
-.popup:hover:after {
-    content: 'Всплывающее окно';
-    position: absolute;
-    padding: 1em;
-    top:50%;
-    left:25%;
-    border-radius: 20px;
-    white-space: nowrap;
-    background-color: green;
-    color: brown;
-
-}
 </style>
 <body>
-    <!-- <h1>Привет</h1> -->
-    <form action="">
-        <input type="text" name="" id="">
-        <input type="submit" value="Поиск">
-    </form>
-    <a href="#">Простая ссылка</a>
-    <a href="active.html">Ссылка была посещена</a>
-    <a href="not_active1.html">Ссылка не была посещена</a>
-    <div class="block">
-Просто текст
+    
+    <div class="loader">
+        <span>
+        </span>
     </div>
-    <div class="popup"</div>Наведи на меня курсор</div>
 </body>
-
 </html>

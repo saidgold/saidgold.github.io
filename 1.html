@@ -7,15 +7,25 @@
     <title>Document</title>
 </head>
 <style>
-    h1 {
-        color: deepskyblue;
-        transition: all ease 0.25s;
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        position: fixed;
+        top:0;
+        left:0;
+        animation: scaleUp 1s .2s ease-in-out infinite;  
     }
-    h1:hover {
-        color: firebrick;
+    @keyframes scaleUp {
+        to {
+            left: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
     }
 </style>
 <body>
-    <h1>Hello,world!</h1>
+    <div class="box"></div>
 </body>
 </html>
