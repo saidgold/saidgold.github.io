@@ -8,66 +8,92 @@
 </head>
 <style>
     body {
-        margin: 0;
-        padding: 0;
         height: 100vh;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
-        background-color: #414a4c;
-    }
-    .loader {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        border: 4px solid #414a4c;
-        overflow: hidden;
-        box-shadow: -10px -10px 15px rgb(59,59,59),
-                    10px 10px 10px rgba(0,0,0,0.1),
-                    inset -10px -10px 15px rgba(51,49,49,0.5) ,
-                    inset 10px 10px 10px rgba(0,0,0,0.1);
-        border-radius: 100%;
-        
-}
-.loader span {
-    position: absolute;
-    width: 100%;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
-    z-index: -1;
-    animation:loader 0.5s linear infinite;
-}
-@keyframes loader {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-.loader::before {
-    content:'';
-    position: absolute;
-    top: 25px;
-    bottom: 25px;
-    right: 25px;
-    left: 25px;
-    background-color: #414a4c;
-    border-radius: 100%;
-    border:4px solid #414a4c;
-    box-shadow: inset -10px -10px 15px rgba(51,49,49,0.5),
-                inset 10px 10px 10px rgba(0,0,0,0.1);
-    
-}
+        margin: 0;
+        background-color: #434982;
+        color: #01d28e;
+        overflow-y: hidden;
 
+    }
+    @font-face {
+        font-family: lackerli;
+        src: url("rum.otf") format("opentype");
+    }
+    h1 {
+        font-family:lackerli,cursive ;
+        font-size: 4em;
+        text-shadow: 1px 1px #f6f078,
+                       2px 2px #f6f078,
+                     3px 3px #f6f078,
+                     4px 4px #f6f078;
+        z-index: 100;
+    }
+    .flower-1 {
+        background-image: url('snowflake.png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: -150px;
+    }
+    .flower-2 {
+        background-image: url('snowflake.png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: -150px;
+    }
+    .flower-3 {
+        background-image: url('snowflake.png');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: -150px;
+    }
+    @keyframes falling {
+        to {
+            top: 100vh;
+            transform: rotate(720deg);
+        }
+    }
+    div:nth-of-type(1) {
+        left: 10vw;
+        width: 125px;
+        height: 125px;
+        animation: falling 12s 2.72s linear infinite;
+    }
+    div:nth-of-type(2) {
+        left: 30vw;
+        width: 150px;
+        height: 150px;
+        animation: falling 15s 2.5s linear infinite;
+    }
+    div:nth-of-type(3) {
+        left: 50vw;
+        width: 120px;
+        height: 120px;
+        animation: falling 12s 2.6s linear infinite;
+        z-index: 999;
+    }
+    div:nth-of-type(4) {
+        left: 65vw;
+        width: 160px;
+        height: 160px;
+        animation: falling 15s 2.8s linear infinite;
+    }
 </style>
 <body>
-    
-    <div class="loader">
-        <span>
-        </span>
-    </div>
+    <div class="flower-1"></div>
+    <div class="flower-1"></div>
+    <div class="flower-1"></div>
+    <div class="flower-2"></div>
+    <div class="flower-2"></div>
+    <div class="flower-2"></div>
+    <div class="flower-3"></div>
+    <div class="flower-3"></div>
+    <div class="flower-3"></div>
+    <h1>Winter is comming...</h1>
 </body>
 </html>
