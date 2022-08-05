@@ -1,8 +1,4 @@
 body {
-    background-color:rgb(104, 131, 114);
+    background-color: rgb(155, 155, 155);
 }
-@media  screen and (max-width:480px) {
-    h1 {
-        font-size: 25px;
-    }
-}
+   
